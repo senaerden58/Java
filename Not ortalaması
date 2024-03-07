@@ -1,0 +1,41 @@
+package Not;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int maths, physics, chemistry, turkish, history, music;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your maths grade: ");
+        maths = input.nextInt();
+        
+        System.out.print("Enter your physics grade: ");
+        physics = input.nextInt();
+        
+        System.out.print("Enter your chemistry grade: ");
+        chemistry = input.nextInt();
+        
+        System.out.print("Enter your turkish grade: ");
+        turkish = input.nextInt();
+        
+        System.out.print("Enter your history grade: ");
+        history = input.nextInt();
+        
+        System.out.print("Enter your music grade: ");
+        music = input.nextInt();
+        
+        double average;
+        average = (maths + physics + chemistry + turkish + history + music) / 6.0;
+        System.out.println("Average: " + average);
+        
+        if (average >= 55 && average <= 100) {
+            System.out.println("Passed the grade. Congratulations!");
+        }
+        else if (average < 55 && average >= 0) { 
+            System.out.println("You failed the grade.");
+        }
+        else {
+            System.out.println("Your average have to be between 0 and 100");
+        }
+    }
+}
