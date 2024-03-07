@@ -15,7 +15,7 @@ public class Pisagor {
 		c=Math.sqrt((a*a)+(b*b));
 		
 		System.out.print("3rd edge: " + c);
-		System.out.println("End");
+		System.out.println("End end end");
 		
 	}
 }
