@@ -35,7 +35,6 @@ public class program {
         while (placedMines < mayinSayisi) {
             int satir = random.nextInt(boyutSatir);
             int sutun = random.nextInt(boyutSutun);
-            if (matris[satir][sutun].equals("-")) { // Check if the cell is empty
                 matris[satir][sutun] = "*";
                 placedMines++;
             }
